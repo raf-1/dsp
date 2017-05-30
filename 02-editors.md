@@ -81,7 +81,7 @@ Upload these 3 files to the [`editors`](editors/) folder.
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I'm making use of emacs due to previous familiarity and extended capabilities.
 
 --
 
@@ -89,6 +89,6 @@ What terminal editor will be your preferred choice of use? How did you make your
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I'll make use of emacs because i'd like to have the same view accross graphical and non-graphical environments. One of the useful shortcuts in emacs is ctrl+x2/3 which allows me to split views. Emacs allows cutomization of editor via options-> customize emacs.
 
  
