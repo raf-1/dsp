@@ -1,0 +1,23 @@
+print("Hello there from VIM")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
