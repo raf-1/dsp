@@ -69,7 +69,7 @@ sed/<search pattern>/<replace patttern>/g filename : search and replace pattern
 What does `xargs` do? Give an example of how to use it.
 
 > > it allows users to execute commands which don't read from stdin and executes commands over them.  
- find -name "<pattern>" | xargs -grep i -l 'python' (notice that this behaves differently without xargs. without xargs it doesnot perform grep on each file found by find but rather performs find on the list of files found by find  
+ find -name "<pattern>" | xargs -grep i -l 'python' (notice that this behaves differently without xargs. without xargs it doesnot perform grep on each file found by find but rather performs find on the list of files found by find)  
  find -name "<pattern>" | xargs rm (notice that this wont work without rm)  
 
  
