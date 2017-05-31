@@ -21,14 +21,14 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 
 > > pwd : show current working dir  
  mkdir : create a directory  
- rm -r : deleting a  directory
- touch file.txt : create a file
- rm : deleting a file
- mv : renaming a file
- ls -a : listing hidden files 
- cp <path of file to be copied> <destination> : copying a file from one dir to another
- ln -s file link : create a symbolic link
- grep -r pattern dir : search recursively for a pattern in dir
+ rm -r : deleting a  directory  
+ touch file.txt : create a file  
+ rm : deleting a file  
+ mv : renaming a file  
+ ls -a : listing hidden files   
+ cp <path of file to be copied> <destination> : copying a file from one dir to another  
+ ln -s file link : create a symbolic link  
+ grep -r pattern dir :**search recursively for a pattern in dir**
 ---
 
 
