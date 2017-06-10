@@ -63,14 +63,11 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
     **code:**    
           squared_to_10 = [x**2 for x in range(1,11)]  
           print (squared_to_10)  
-
 	  values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]  
 	  squared_to_10_map = map(lambda x: x**2, values)  
 	  print (list(squared_to_10_map))  
-
 	  evens_to_10 = [x for x in range (1,11) if x%2==0]  
 	  print (evens_to_10)  
-
 	  evens_to_10_filter = filter(lambda x: x%2==0, values)  
 	  print (list(evens_to_10_filter))  
     **output:**
