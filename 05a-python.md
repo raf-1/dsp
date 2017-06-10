@@ -22,7 +22,7 @@ How are Python lists and sets similar and different? Give examples of using both
 
 >> Sets are similar to lists in that they are constructs to store values. However, there are differeces such as: sets can't contain duplicates, set's have mathematical functions available for comparison of 2 sets (union, intersect, difference, symmetric difference) which are not present in lists.
 
- For example:
+>> For example:  
     code:  
           my_list = ["Rafael", 22, "Isabella", 25, "Rafael", 22]  
     	  my_set = {"Rafael", 22, "Isabella", 25, "Rafael", 22}  
