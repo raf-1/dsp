@@ -70,22 +70,22 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 	  print (evens_to_10)  
 	  evens_to_10_filter = filter(lambda x: x%2==0, values)  
 	  print (list(evens_to_10_filter))  
-    **output:**
+    **output:**    
             [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]  
     	    [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]  
 	    [2, 4, 6, 8, 10]  
 	    [2, 4, 6, 8, 10]  
 
->Upon comparison, I have found that list comprehension is able to quickly create lists based on logic similar to map and filter. However, map and filter introduce a new scope for defined variables and thusare less prone to bugs because variables are not silently overwritten unlike when list comprehension is used. An example of this potential bug is seen below:
+>Upon comparison, I have found that list comprehension is able to quickly create lists based on logic similar to map and filter. However, map and filter introduce a new scope for defined variables and thus are less prone to bugs since variables are not silently overwritten unlike when list comprehensions are used. An example of this potential bug is seen below:
 
 >>*For example:*   
     **#case 1**    
-    for x in values:
-    	# x is not overwritten when lambda is used
+    for x in values:  
+    	# x is not overwritten when lambda is used  
     	squared_to_10_map = map(lambda x: x**2, values)  
-    **#case 2**  
-    for x in values
-    	#x is silently overwritten thus prone to bugs
+    **#case 2**    
+    for x in values  
+    	#x is silently overwritten thus prone to bugs  
     	squared_to_10 = [x**2 for x in range(1,11)]
 
 >Moreover, we can also quickly create sets and dictionaries using comprehensions.
@@ -96,7 +96,7 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 	      print (my_set_comprehension)  
 	      my_dic_comprehension = {x : chr(65+x) for x in range(0,11)}  
 	      print (my_dic_comprehension)  
-	**output:**
+	**output:**    
 	{1, 3, 5, 9, 7}  
 	       {0: 'A', 1: 'B', 2: 'C', 3: 'D', 4: 'E', 5: 'F', 6: 'G', 7: 'H', 8: 'I', 9: 'J', 10: 'K'}   
 
