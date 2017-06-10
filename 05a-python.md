@@ -42,7 +42,7 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 > Lambda is used when we want to perform functional programming. Lambdas are similar to functions but are useful for cases when we don't use them repeatedly since once they are used, they are destroyed immediately.
 
 >>For example:  
-    code: my_list = [6,1,3,4,5,2]  
+    code: my_list = [6,1,3,4,5,2]
           print (my_list)  
 	  print (sorted(my_list, key=lambda x: x%2==0))  
     output: [6, 1, 3, 4, 5, 2]  
