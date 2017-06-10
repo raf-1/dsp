@@ -85,8 +85,7 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
     **#case 1**    
     for x in values:
     	# x is not overwritten when lambda is used
-    	squared_to_10_map = map(lambda x: x**2, values)
-
+    	squared_to_10_map = map(lambda x: x**2, values)  
     **#case 2**  
     for x in values
     	#x is silently overwritten thus prone to bugs
@@ -98,7 +97,6 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 	**code:**  
 	      my_set_comprehension = {x for x in range(0,11) if x%2 != 0}  
 	      print (my_set_comprehension)  
-
 	      my_dic_comprehension = {x : chr(65+x) for x in range(0,11)}  
 	      print (my_dic_comprehension)  
 	**output:**
