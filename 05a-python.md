@@ -22,15 +22,15 @@ How are Python lists and sets similar and different? Give examples of using both
 
 >> Sets are similar to lists in that they are constructs to store values. However, there are differeces such as: sets can't contain duplicates, set's have mathematical functions available for comparison of 2 sets (union, intersect, difference, symmetric difference) which are not present in lists.
 
-For example:
-    code: my_list = ["Rafael", 22, "Isabella", 25, "Rafael", 22]
-    	  my_set = {"Rafael", 22, "Isabella", 25, "Rafael", 22}
-	  print (my_list)
-	  print (my_set)
-    output: ['Rafael', 22, 'Isabella', 25, 'Rafael', 22]
-            {25, 'Rafael', 'Isabella', 22}
+>> For example:
+    code: my_list = ["Rafael", 22, "Isabella", 25, "Rafael", 22]  
+    	  my_set = {"Rafael", 22, "Isabella", 25, "Rafael", 22}  
+	  print (my_list)  
+	  print (my_set)  
+    output: ['Rafael', 22, 'Isabella', 25, 'Rafael', 22]  
+            {25, 'Rafael', 'Isabella', 22}  
 
-Moreover, when finding an element in a list we are able to make use of indexing which is not available for sets. For example, we are able to insert/delete values for a specific index of a list or find the corresponding index of a given value; for sets however, since indexing is not available we can make use of available functions such as add() / update() to add values & discard() / remove () to remove values.
+>> Moreover, when finding an element in a list we are able to make use of indexing which is not available for sets. For example, we are able to insert/delete values for a specific index of a list or find the corresponding index of a given value; for sets however, since indexing is not available we can make use of available functions such as add() / update() to add values & discard() / remove () to remove values.
 ---
 
 ### Q3. Lambda Function
