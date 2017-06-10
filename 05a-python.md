@@ -24,12 +24,11 @@ How are Python lists and sets similar and different? Give examples of using both
 
  For example:
     code:  
-          ```python
           my_list = ["Rafael", 22, "Isabella", 25, "Rafael", 22]  
     	  my_set = {"Rafael", 22, "Isabella", 25, "Rafael", 22}  
 	  print (my_list)  
 	  print (my_set)  
-	  ```
+	  
     output:  
             ['Rafael', 22, 'Isabella', 25, 'Rafael', 22]  
             {25, 'Rafael', 'Isabella', 22}  
