@@ -24,7 +24,7 @@ How are Python lists and sets similar and different? Give examples of using both
 
 >> For example:  
     code:  
-          my_list = ["Rafael", 22, "Isabella", 25, "Rafael", 22]  
+          * my_list = ["Rafael", 22, "Isabella", 25, "Rafael", 22]  *    
     	  my_set = {"Rafael", 22, "Isabella", 25, "Rafael", 22}  
 	  print (my_list)  
 	  print (my_set)  	  
