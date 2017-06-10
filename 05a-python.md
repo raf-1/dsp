@@ -43,12 +43,12 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 >>For example:  
     code:  
-          my_list = [6,1,3,4,5,2]
+          my_list = [6,1,3,4,5,2]  
           print (my_list)  
 	  print (sorted(my_list, key=lambda x: x%2==0))  
-    output:  
+    output:    
 	    [6, 1, 3, 4, 5, 2]  
-            [1, 3, 5, 6, 4, 2]  
+            [1, 3, 5, 6, 4, 2]    
     note: what is returned by lambda is [1,0,0,1,0,1]. sorted performs sorting on these returned values only once and thus why we expect the seen values on the second print. 
 
 ---
