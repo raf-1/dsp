@@ -79,11 +79,11 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 >Upon comparison, I have found that list comprehension is able to quickly create lists based on logic similar to map and filter. However, map and filter introduce a new scope for defined variables and thus are less prone to bugs since variables are not silently overwritten unlike when list comprehensions are used. An example of this potential bug is seen below:
 
 >>*For example:*   
-    **#case 1**    
+    __#case 1__    
     for x in values:  
     	# x is not overwritten when lambda is used  
     	squared_to_10_map = map(lambda x: x**2, values)  
-    **#case 2**    
+    __#case 2__   
     for x in values  
     	#x is silently overwritten thus prone to bugs  
     	squared_to_10 = [x**2 for x in range(1,11)]
