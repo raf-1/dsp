@@ -22,13 +22,13 @@ How are Python lists and sets similar and different? Give examples of using both
 
 > Sets are similar to lists in that they are constructs to store values. However, there are differeces such as: sets can't contain duplicates, set's have mathematical functions available for comparison of 2 sets (union, intersect, difference, symmetric difference) which are not present in lists.
 
->> For example:  
-    code:  
+>>*For example:*   
+   **code:** 
           my_list = ["Rafael", 22, "Isabella", 25, "Rafael", 22]  
     	  my_set = {"Rafael", 22, "Isabella", 25, "Rafael", 22}  
 	  print (my_list)  
 	  print (my_set)  	  
-    output:  
+   **output:**   
             ['Rafael', 22, 'Isabella', 25, 'Rafael', 22]  
             {25, 'Rafael', 'Isabella', 22}  
 
@@ -41,7 +41,7 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 > Lambda is used when we want to perform functional programming. Lambdas are similar to functions but are useful for cases when we don't use them repeatedly since once they are used, they are destroyed immediately.
 
->>For example:  
+>>*For example:*  
     **code:**  
           my_list = [6,1,3,4,5,2]  
           print (my_list)  
@@ -49,7 +49,7 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
     **output:**  
 	    [6, 1, 3, 4, 5, 2]  
             [1, 3, 5, 6, 4, 2]    
-    note: what is returned by lambda is [1,0,0,1,0,1]. sorted performs sorting on these returned values only once and thus why we expect the seen values on the second print. 
+    **note:** what is returned by lambda is [1,0,0,1,0,1]. sorted performs sorting on these returned values only once and thus why we expect the seen values on the second print. 
 
 ---
 
