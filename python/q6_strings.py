@@ -46,7 +46,7 @@ def both_ends(s):
         return ""
     else:
         response = s[:2] + s[len(s)-2:]
-        return
+        return response
     
 def fix_start(s):
     """
