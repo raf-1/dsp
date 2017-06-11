@@ -1,7 +1,7 @@
 # Based on materials copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
-
-
+import re
+import math
 def donuts(count):
     """
     Given an int count of a number of donuts, return a string of the
@@ -18,7 +18,12 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+
+    if count >= 10:
+        return "Number of donuts: many"
+    else:
+        response = "Number of donuts: " + str(count)
+        return response
 
 
 def both_ends(s):
@@ -37,9 +42,12 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
-
-
+    if len(s) < 2:
+        return ""
+    else:
+        response = s[:2] + s[len(s)-2:]
+        return
+    
 def fix_start(s):
     """
     Given a string s, return a string where all occurences of its
@@ -56,7 +64,7 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    return s[0]+s[1:].replace(s[0],"*")
 
 
 def mix_up(a, b):
@@ -74,9 +82,10 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
-
-
+    whole_word = b[:2] + a[2:] + " " + a[:2] + b[2:]
+    
+    return whole_word
+    
 def verbing(s):
     """
     Given a string, if its length is at least 3, add 'ing' to its end.
@@ -91,9 +100,15 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    if len(s) <3:
+        return s
+    else:
+        if s[len(s)-3:] == "ing":
+            return s + "ly"
+        else:
+            return s + "ing"
 
-
+    
 def not_bad(s):
     """
     Given a string, find the first appearance of the substring 'not'
@@ -111,8 +126,18 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    s_new = re.sub("([^\s\w])", "", s)
 
+    print ("s_new:", s_new)
+    if bool(re.search("not", s)) and bool(re.search("bad", s)):
+       s_list = s_new.split() 
+       if s_list.index("bad") - s_list.index("not") > 0:
+         return " ".join(s_list[:s_list.index("not")]) + " good" 
+       else:
+          return s
+    else:
+       return s
+    
 
 def front_back(a, b):
     """
@@ -130,4 +155,19 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+
+    if len(a) % 2 == 0:
+        a_front = a[:math.floor(len(a)/2)]
+        a_back = a[math.floor(len(a)/2):]
+    else:
+        a_front = a[:math.floor(len(a)/2)+1]
+        a_back = a[math.floor(len(a)/2)+1:]
+    
+    if len(b) % 2 == 0:
+        b_front = b[:math.floor(len(b)/2)]
+        b_back = b[math.floor(len(b)/2):]
+    else:
+        b_front = b[:math.floor(len(b)/2)+1]
+        b_back = b[math.floor(len(b)/2)+1:]
+
+    return a_front + b_front + a_back + b_back
